@@ -1,0 +1,158 @@
+body {
+    /* background: red; */
+}
+.navbar-brand {
+    font-size: 1.8rem;
+}
+.nav-link {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-left: 20px; ;
+    margin-right: 20px;;
+}
+main {
+    background-image: url("../images/dog1.jpg") ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+.dummy {
+    height : 300px;
+}
+.ht-300 {
+    min-height: 300px;
+}
+.ht-600 {
+    height: 800px;;
+}
+.bg-img2 {
+    height: 80vh;
+    background-image: url("../images/dog2.jpg") ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cube-wrap {
+    width: 400px;
+    height: 400px;
+    -webkit-perspective: 2000px;
+    -webkit-perspective-origin: 50% -500px;
+}
+  .single-box {
+    background-image: url(https://i.postimg.cc/8zd9b1cm/1.png);
+    background-size: cover;
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #60c2ef;
+    -webkit-transform: rotateY(45deg) translateZ(-200px) rotateX(15deg);
+    -webkit-transform-origin: 50% 50% 0;            
+  }
+  .box {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: rotate 10s infinite linear;
+  }
+  .side-front { 
+    background-image: url('../images/dog-1.jpg');
+    -webkit-transform: translateZ(180px);
+  }
+  .side-back { 
+    background-image: url('../images/dog-3.jpg');
+    -webkit-transform: rotateY(180deg) translateZ(180px);
+  }
+  .side-top {
+    background-image: url('../images/dog-1.jpg');
+    -webkit-transform: rotateX(90deg) translateZ(180px);
+  }
+  .side-bottom { 
+    -webkit-transform: rotateX(-90deg) translateZ(180px); 
+  }
+  .side-left { 
+    background-image: url('../images/dog-1.jpg');
+    -webkit-transform: rotateY(-90deg) translateZ(180px); 
+  }
+  .side-right { 
+    background-image: url('../images/dog-3.jpg');
+    -webkit-transform: rotateY(90deg) translateZ(180px); 
+  }
+  
+  
+  @-webkit-keyframes rotate {
+    0% { -webkit-transform: rotateY(0); }
+    100% { -webkit-transform: rotateY(360deg); }
+  }
+  
+  
+  
+  /* ignore the code below */
+  
+  
+  .link-area
+  {
+    position:fixed;
+    bottom:20px;
+    left:20px;  
+    padding:15px;
+    border-radius:40px;
+    background:tomato;
+  }
+  .link-area a
+  {
+    text-decoration:none;
+    color:#fff;
+  }
+.icon {
+    font-size: 2.5rem;
+}
+.copyright {
+    text-align: right;
+    line-height: 3;
+}
+.nav-footer-box{
+    text-align: center;
+}
+.nav-footer {
+    text-decoration: none;
+    color : gray;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.dog-list {
+    height: 400px;
+    /* width: 300px; */
+    /* background-color: greenyellow; */
+    background-image: url('../images/dog-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    display: flex;  
+    align-items: flex-end;
+}
+.dog-list div {
+    display: none;
+}
+.dog-list:hover>div {
+    display: block;
+    background:rgba(0,0,0,0.6);
+    color: white; 
+    padding: 20px;
+}
+
+@media screen and (min-width : 1200px){
+    p {
+        font-size: 120%;
+    }
+}
